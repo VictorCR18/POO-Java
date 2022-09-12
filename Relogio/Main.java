@@ -12,19 +12,19 @@ class Time {
     } // todo
 
     public void setHour(int hour) {
-        if(hour <= 0 && hour > 24){
+        if(hour < 0 || hour > 24){
             System.out.println("fail: hora invalida");
         }else this.hour = hour;
     } // todo
 
     public void setMinute(int minute) {
-        if( minute <= 0 && minute > 60){
+        if( minute < 0 || minute > 60){
             System.out.println("fail: minuto invalido");
         }else this.minute = minute;
     } // todo
 
     public void setSecond(int second) {
-        if(second <= 0 && second > 60){
+        if(second < 0 || second > 60){
             System.out.println("fail: segundo invalido");
         }else this.second = second;
     } // todo
@@ -51,7 +51,12 @@ class Time {
                 minute++;
             }else{
                 minute = 0;
-                hour++;
+                if(hour < 23){
+                    hour++;
+                }else{
+                    hour = 0;
+                }
+                
             }
         }
         

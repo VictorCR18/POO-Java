@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class main {  
+public class Solver {  
     public static void main(String[] args) {
         int n;
         String s1, s2;
@@ -20,6 +20,5 @@ public class main {
             }
         }
             System.out.println(acerto);
-
     }
 }

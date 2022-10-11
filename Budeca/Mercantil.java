@@ -36,10 +36,10 @@ public class Mercantil {
         StringBuilder retorno = new StringBuilder("|");
 
         for (int i = 0; i < this.qtdCaixas; i++) {
-            if (this.caixas != null) {
+            if (this.caixas[i] != null) {
                 retorno.append(i + ":" + this.caixas[i] + "|");
             } else {
-                retorno.append(i + "-----|");
+                retorno.append(i + ":-----|");
             }
         }
 

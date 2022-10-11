@@ -14,6 +14,6 @@ public class Pessoa {
     }
 
     public String toString() {
-        return String.format(this.nome);
+        return getNome();
     }
 }
